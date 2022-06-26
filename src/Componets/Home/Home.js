@@ -1,9 +1,10 @@
 import React from 'react';
+import Carosel from './Carosel';
 
 const Home = () => {
     return (
-        <div className="w-full">
-           
+        <div>
+           <Carosel />
         </div>
     );
 };
