@@ -1,9 +1,10 @@
 import React, { useEffect } from 'react';
 import { useForm } from 'react-hook-form';
 import auth from"../../firebase.init";
-import { useSignInWithEmailAndPassword, useSignInWithGoogle } from 'react-firebase-hooks/auth';
+import { useSendPasswordResetEmail, useSignInWithEmailAndPassword, useSignInWithGoogle } from 'react-firebase-hooks/auth';
 import { Link, useLocation, useNavigate } from 'react-router-dom';
 import Loading from '../Shared/Loading';
+import {  toast } from 'react-toastify';
 
 
 const Login = () => {
@@ -15,6 +16,9 @@ const Login = () => {
         loading,
         error,
       ] = useSignInWithEmailAndPassword(auth);
+      const [sendPasswordResetEmail, sending] = useSendPasswordResetEmail(
+        auth
+      );
     const navigate = useNavigate()
     const { register, formState: { errors }, handleSubmit } = useForm();
     const onSubmit = data => {
@@ -37,6 +41,17 @@ const Login = () => {
     if(loading || gLoading){
         return  <Loading />;
     }
+    const resetPassword = async(data)=>{
+        const email = data?.email?.current?.value;
+     if(email){
+        await sendPasswordResetEmail(email);
+        toast("sent email")
+     }
+     else{
+        toast('please enter your email')
+     }
+    }
+
     return (
         <div className="flex justify-center h-screen items-center my-8">
         <div className="card w-96 bg-base-100 shadow-xl">
@@ -97,8 +112,8 @@ const Login = () => {
                     </div>
                     {signInError}
                     <input className="btn w-full max-w-xs" type="submit" value="Login" />
-                
                 </form>
+                    <p><button className=" btn btn-link text-primary pe-auto text-decoration-none" onClick={resetPassword}>Reset Password</button></p>
                 <p><small>Create to account <Link className='text-primary' to="/signup">Create New Account</Link></small></p>
                 <div className="divider">OR</div>
                 <button onClick={() => signInWithGoogle()} className="btn btn-outline">Continue With Google</button>

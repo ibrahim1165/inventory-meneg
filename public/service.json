@@ -1,0 +1,50 @@
+[
+    {
+       "name":"All-in-ones",
+       "img":"https://i.ibb.co/H76S3TL/pic1.jpg",
+       "price":800,
+       "description":"Windows computers are fast, thin, and powerful. Many of these PCs can upgrade to Windows 11 when it becomes available.‡ Some even come preloaded with Windows 11."
+    },
+    {
+       "name":"Desktop PC",
+       "img":"https://i.ibb.co/pnKNn7W/pic2.jpg",
+       "price":700,
+       "description":"Desktop PC has Intel dUal core processor, Intel chip G-41 motherboard, 4 GB desktop PC RAM, 320 GB hard disk drive, 17 inch monitor, ATX casing, USB keyboard and mouse."
+    },
+    {
+       "name":"HP Elite Desktop PC",
+       "price":600,
+       "img":"https://i.ibb.co/wdhbsPZ/pic3.jpg",
+       "description":"The product is refurbished, is fully functional and in excellent condition. Backed by the 90-day Amazon Renewed Guarantee."
+    },
+    {
+       "name":"Desktop PC",
+       "price":500,
+       "img":"https://i.ibb.co/7bmwrfQ/pic4.jpg",
+       "description":"Desktop PC has Intel core i5 2nd generation processor, Gigabyte H-61 motherboard, 4GB RAM, 500GB hard disk drive, 17 inch monitor, ATX thermal desktop PC casing"
+    },
+    {
+       "name":"Desktop pc",
+       "price":700,
+       "img":"https://i.ibb.co/71gJ2HZ/pic5.jpg",
+       "description":"Falcon Northwest's Tiki packs full-tower power into a small-form-factor chassis without compromise. Just beware—it's not cheap."
+    },
+    {
+       "name":"Desktop",
+       "price":500,
+       "img":"https://i.ibb.co/G2QDdz6/pic6.jpg",
+       "description":"Dell's compact Inspiron Desktop 3891 offers a peppy Core i3 processor, Wi-Fi 6, and a DVD burner for a rock-bottom price.,"
+    },
+    {
+       "name":"Desktop pc",
+       "price":450,
+       "img":"https://i.ibb.co/k6f9Z5d/pic7.jpg",
+       "description":"Falcon Northwest's Tiki packs full-tower power into a small-form-factor chassis without compromise. Just beware—it's not cheap."
+    },
+    {
+       "name":"All in One",
+       "price":385,
+       "img":"https://i.ibb.co/y068KQK/pic8.jpg",
+       "description":"Lenovo's entry-level Legion Tower 5i gaming desktop delivers improved performance and style at a low price."
+    }
+]
