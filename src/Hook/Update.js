@@ -27,7 +27,7 @@ const Update = () => {
         const price = e.target.price.value;
         const description = e.target.description.value;
         const updateUser ={name, price, description};
-        const url = `https://ancient-brook-51356.herokuapp.com/product/${id}`;
+        const url =`https://ancient-brook-51356.herokuapp.com/product/${id}`;
         fetch(url, { 
          method: 'PUT',
          headers: {
