@@ -12,6 +12,7 @@ import { ToastContainer} from 'react-toastify';
 import Profile from './Componets/Profile/Profile';
 import Computer from './Componets/Cetagory/Computer';
 import Laptops from './Componets/Cetagory/Laptops';
+import Services from './Componets/Service/Services';
 
 
 function App() {
@@ -22,8 +23,9 @@ function App() {
         <Route path="/" element={<Home />}  />
         <Route path="/computer" element={<Computer />}  />
         <Route path="/laptop" element={<Laptops />}  />
+        <Route path="/services" element={<Services />}  />
         {/* <Route path="/profile" element={<Profile />}  /> */}
-        <Route path="/item" element={<AddItem />}  />
+        <Route path="/add" element={<AddItem />}  />
         <Route path="/login" element={<Login />} ></Route>
         <Route path="/signup" element={ <Signup />} ></Route>
       </Routes>

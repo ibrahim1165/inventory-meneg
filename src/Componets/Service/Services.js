@@ -27,24 +27,19 @@ const Services = () => {
       }
     return (
         <div>
-        <div className=" text-center mt-28">
+        <div className=" text-center ">
              <h1 className="text-4xl m-4 text-orange-500">
                 All Product</h1>
                  <p className="text-5xl font-bold ">WE PROVIDE BEST CUSTOM <br />PC & LAPTOP</p>
              </div>
-             <div className="grid grid-cols-1 md:grid-cols-3 lg:grid-cols-3 px-6 gap-8 mt-8 my-12">
+             <div className="grid grid-cols-1 md:grid-cols-3 lg:grid-cols-3 px-6 gap-4 mt-8 my-12 mx-auto">
                  {
-                     services.slice(0,6).map(service=><Service
+                     services.map(service=><Service
                      key={service.id}
                      service={service}
                      DeleteBtn={DeleteBtn}
                      ></Service>)
                  }
-             </div>
-             <div className="text-center m-4">
-                <button className=" btn btn-accent">
-                    <Link to="/services">More Product</Link>
-                </button>
              </div>
          </div>
     );

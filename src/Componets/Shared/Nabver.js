@@ -23,7 +23,7 @@ const Nabver = () => {
             <li>
 
             </li>
-            <li><Link to="/item">Add Item</Link></li>
+            <li><Link to="/services">Product</Link></li> 
             <li>{user ? <button onClick={singout}>Logout</button> :
               <Link to="/login">Login</Link>
             }</li>
@@ -36,13 +36,19 @@ const Nabver = () => {
             </label>
             <ul
               tabindex='0'
-              class='dropdown-content menu p-2 shadow bg-black  rounded-box w-52'
+              class='dropdown-content text-white menu p-2 shadow bg-black  rounded-box w-52'
             >
               <li>
-                <Link to=''>Laptop</Link>
+              <Link to='/laptop'>Laptop</Link>
               </li>
               <li>
-                <Link to=''>Computer</Link>
+              <Link to='/computer'>Computer</Link>
+              </li>
+              <li>
+              <Link to='/add'>Add Item</Link>
+              </li>
+              <li>
+              <Link to='/item'>My item</Link>
               </li>
             </ul>
           </li>
@@ -67,7 +73,7 @@ const Nabver = () => {
       <div className="navbar-end hidden lg:flex">
         <ul className="menu menu-horizontal p-0">
           <li><Link to="/">Home</Link></li>
-          <li><Link to="/item">Add Item</Link></li> 
+          <li><Link to="/services">Product</Link></li> 
 
           <li class='dropdown dropdown-hover dropdown-end'>
             <label
@@ -85,6 +91,12 @@ const Nabver = () => {
               </li>
               <li>
                 <Link to='/computer'>Computer</Link>
+              </li>
+              <li>
+              <Link to='/add'>Add Item</Link>
+              </li>
+              <li>
+              <Link to='/item'>My item</Link>
               </li>
             </ul>
           </li>
