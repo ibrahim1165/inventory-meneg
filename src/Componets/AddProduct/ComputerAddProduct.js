@@ -1,7 +1,10 @@
 import React from 'react';
 import { useForm } from 'react-hook-form';
+import { toast } from 'react-toastify';
+import { useNavigate } from 'react-router-dom';
 const ComputerAddProduct = () => {
     const { register, handleSubmit } = useForm();
+    const navigate = useNavigate()
     const onSubmit =data=>{
         const url = `http://localhost:5000/computer`;
         fetch(url, { 
@@ -14,6 +17,8 @@ const ComputerAddProduct = () => {
         .then(res=>res.json())
         .then(data =>{
          console.log(data);
+         toast("Product added successfully")
+         navigate("/")
          
         })
     }

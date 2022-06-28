@@ -30,16 +30,16 @@ const Nabver = () => {
             <li>{user ? <button onClick={singout}>Logout</button> :
               <Link to="/login">Login</Link>
             }</li>
-             <li class='dropdown dropdown-hover dropdown-end'>
+             <li className='dropdown dropdown-hover dropdown-end'>
             <label
               tabindex='0'
-              class=' btn-outline rounded-lg'
+              className=' btn-outline rounded-lg'
             >
               Category
             </label>
             <ul
               tabindex='0'
-              class='dropdown-content text-white menu p-2 shadow bg-black  rounded-box w-52'
+              className='dropdown-content text-white menu p-2 shadow bg-black  rounded-box w-52'
             >
               <li>
               <Link to='/laptop'>Laptop</Link>
@@ -53,7 +53,7 @@ const Nabver = () => {
             </ul>
           </li>
             <li>
-              {user ? <div class=" w-14 rounded-full">
+              {user ? <div className=" w-14 rounded-full">
                 <Link to="profile" className="flex items-center justify-center">
                   <p>{user.displayName}</p>
                 </Link>
@@ -75,16 +75,16 @@ const Nabver = () => {
           <li><Link to="/">Home</Link></li>
           <li><Link to="/services">Product</Link></li> 
 
-          <li class='dropdown dropdown-hover dropdown-end'>
+          <li className='dropdown dropdown-hover dropdown-end'>
             <label
               tabindex='0'
-              class=' btn-outline rounded-lg'
+              className=' btn-outline rounded-lg'
             >
               Category
             </label>
             <ul
               tabindex='0'
-              class='dropdown-content menu p-2 shadow bg-black  rounded-box w-52'
+              className='dropdown-content menu p-2 shadow bg-black  rounded-box w-52'
             >
               <li>
                 <Link to='/laptop'>Laptop</Link>
@@ -101,7 +101,7 @@ const Nabver = () => {
             <Link to="/login">Login</Link>
           }</li>
           <li>
-            {user ? <div class="flex items-center justify-center w-14 rounded-full">
+            {user ? <div className="flex items-center justify-center w-14 rounded-full">
               <Link to="profile">
               {user?.photoURL ? (
                   <img src={user?.photoURL} alt="" />

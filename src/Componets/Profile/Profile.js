@@ -62,10 +62,10 @@ const Profile = () => {
       };
     return (
         <>
-        <div class="mx-auto  mb-6 card w-96 bg-base-100 shadow-xl">
-          <figure class="px-10 pt-10">
-            <div class="avatar">
-              <div class="w-24 rounded-full ring ring-primary ring-offset-base-100 ring-offset-2">
+        <div className="mx-auto  mb-6 card w-96 bg-base-100 shadow-xl">
+          <figure className="px-10 pt-10">
+            <div className="avatar">
+              <div className="w-24 rounded-full ring ring-primary ring-offset-base-100 ring-offset-2">
                 {user?.photoURL ? (
                   <img src={user?.photoURL} alt="" />
                 ) : (
@@ -77,12 +77,12 @@ const Profile = () => {
               </div>
             </div>
           </figure>
-          <div class="card-body items-center text-center">
-            <h2 class="card-title">Name : {profile?.displayName}</h2>
+          <div className="card-body items-center text-center">
+            <h2 className="card-title">Name : {profile?.displayName}</h2>
             <p>Email: {profile?.email}</p>
-            <div class="form-control w-full max-w-xs">
-              <label class="label">
-                <span class="label-text">College Name:</span>
+            <div className="form-control w-full max-w-xs">
+              <label className="label">
+                <span className="label-text">College Name:</span>
               </label>
               <input
                 type="text"
@@ -90,12 +90,12 @@ const Profile = () => {
                 placeholder={
                   profile?.clg === "" ? "No College Name Yet! " : profile?.clg
                 }
-                class="input input-bordered w-full max-w-xs text-lg focus:outline-none  font-bold text-black"
+                className="input input-bordered w-full max-w-xs text-lg focus:outline-none  font-bold text-black"
               />
             </div>
-            <div class="form-control w-full max-w-xs">
-              <label class="label">
-                <span class="label-text">Address:</span>
+            <div className="form-control w-full max-w-xs">
+              <label className="label">
+                <span className="label-text">Address:</span>
               </label>
               <input
                 type="text"
@@ -105,12 +105,12 @@ const Profile = () => {
                     ? "No Address Added Yet!"
                     : profile?.address
                 }
-                class="input input-bordered w-full max-w-xs text-lg focus:outline-none  font-bold text-black"
+                className="input input-bordered w-full max-w-xs text-lg focus:outline-none  font-bold text-black"
               />
             </div>
-            <div class="form-control w-full max-w-xs">
-              <label class="label">
-                <span class="label-text">Number</span>
+            <div className="form-control w-full max-w-xs">
+              <label className="label">
+                <span className="label-text">Number</span>
               </label>
               <input
                 type="text"
@@ -120,10 +120,10 @@ const Profile = () => {
                     ? "No Phone Added Yet! "
                     : profile?.phone
                 }
-                class="input input-bordered w-full max-w-xs text-lg focus:outline-none  font-bold text-black"
+                className="input input-bordered w-full max-w-xs text-lg focus:outline-none  font-bold text-black"
               />
             </div>
-            <label for="my-modal" class="my-2 cursor-pointer hover:text-blue-500">
+            <label for="my-modal" className="my-2 cursor-pointer hover:text-blue-500">
               Edit Data??
             </label>
           </div>
@@ -135,16 +135,16 @@ const Profile = () => {
           {/* <!-- The button to open modal --> */}
   
           {/* <!-- Put this part before </body> tag --> */}
-          <input type="checkbox" id="my-modal" class="modal-toggle" />
-          <div class="modal">
-            <div class="modal-box">
+          <input type="checkbox" id="my-modal" className="modal-toggle" />
+          <div className="modal">
+            <div className="modal-box">
               <label
                 for="my-modal"
-                class="btn btn-sm btn-circle absolute right-2 top-2"
+                className="btn btn-sm btn-circle absolute right-2 top-2"
               >
                 ✕
               </label>
-              <div class="card-body">
+              <div className="card-body">
                 <span className="text-center my-2 ">Edit Info</span>
                 <form action="" onSubmit={getData}  
                 >
@@ -153,23 +153,23 @@ const Profile = () => {
                     type="text"
                     name="clg"
                     placeholder="Add College"
-                    class=" my-3 input input-bordered w-full max-w-xs"
+                    className=" my-3 input input-bordered w-full max-w-xs"
                   />
                   <input
                     required
                     type="text"
                     name="address"
                     placeholder="Add Address"
-                    class=" my-3 input input-bordered w-full max-w-xs"
+                    className=" my-3 input input-bordered w-full max-w-xs"
                   />
                   <input
                     required
                     type="number"
                     name="phone"
                     placeholder="Add Number"
-                    class=" my-3 input input-bordered w-full max-w-xs"
+                    className=" my-3 input input-bordered w-full max-w-xs"
                   />
-                  <div class="modal-action">
+                  <div className="modal-action">
                     <input
                       for="my-modal"
                       type="submit"

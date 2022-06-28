@@ -1,10 +1,13 @@
 import React from 'react';
+import { toast } from 'react-toastify';
 import { useForm } from 'react-hook-form';
+import { useNavigate } from 'react-router-dom';
 
 const LapAddProduct = () => {
     const { register, handleSubmit } = useForm();
+    const navigate = useNavigate()
     const onSubmit =data=>{
-        const url = `http://localhost:5000/computer`;
+        const url = `http://localhost:5000/laptop`;
         fetch(url, { 
          method: 'POST',
          headers: {
@@ -14,7 +17,9 @@ const LapAddProduct = () => {
         })
         .then(res=>res.json())
         .then(data =>{
+            navigate("/")
          console.log(data);
+         toast("Product added successfully")
          
         })
     }

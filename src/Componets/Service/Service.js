@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 
 const Service = ({ service, DeleteBtn }) => {
     const { name, price, img, description } = service;
@@ -11,11 +12,19 @@ const Service = ({ service, DeleteBtn }) => {
                 <p>Price: ${price}</p>
                 <p>Description: <span className="text-sm text-gray-500">{description}</span></p>
             </div>
+            <div>
             <div class="card-actions justify-end p-2">
                 <button class="btn btn-sm btn-primary btn-outline  mt-[-30px]">
                     <button onClick={() => DeleteBtn(service._id)}>Delete</button>
                 </button>
             </div>
+            <div class="card-actions justify-end p-2">
+                <button class="btn btn-sm btn-primary btn-outline  mt-[-30px]">
+                <Link to={`/update/${service._id}`}><button>Update</button></Link>
+                </button>
+            </div>
+            </div>
+            
         </div>
     </div>
     );
