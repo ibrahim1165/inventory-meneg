@@ -13,6 +13,8 @@ import Profile from './Componets/Profile/Profile';
 import Computer from './Componets/Cetagory/Computer';
 import Laptops from './Componets/Cetagory/Laptops';
 import Services from './Componets/Service/Services';
+import ComputerAddProduct from './Componets/AddProduct/ComputerAddProduct';
+import LapAddProduct from './Componets/AddProduct/LapAddProduct';
 
 
 function App() {
@@ -24,9 +26,11 @@ function App() {
         <Route path="/computer" element={<Computer />}  />
         <Route path="/laptop" element={<Laptops />}  />
         <Route path="/services" element={<Services />}  />
-        {/* <Route path="/profile" element={<Profile />}  /> */}
+        <Route path="/profile" element={<Profile />}  />
         <Route path="/add" element={<AddItem />}  />
         <Route path="/login" element={<Login />} ></Route>
+        <Route path="/com" element={<ComputerAddProduct  />}  />
+        <Route path="/lap" element={<LapAddProduct />}  />
         <Route path="/signup" element={ <Signup />} ></Route>
       </Routes>
       <ToastContainer />

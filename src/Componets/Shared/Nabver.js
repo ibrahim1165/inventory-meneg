@@ -1,13 +1,16 @@
 import React from 'react';
-import { Link } from 'react-router-dom';
+import { Link, useNavigate } from 'react-router-dom';
 import cover from "../../assets/computer.jpg"
 import { useAuthState } from 'react-firebase-hooks/auth';
 import auth from '../../firebase.init';
 import { signOut } from 'firebase/auth';
 const Nabver = () => {
+  const navigate = useNavigate()
   const [user] = useAuthState(auth);
   const singout = () => {
     signOut(auth)
+    navigate("/")
+
   }
   return (
     <div className="navbar bg-gray-900 px-8 lg:text-white">
@@ -46,10 +49,7 @@ const Nabver = () => {
               </li>
               <li>
               <Link to='/add'>Add Item</Link>
-              </li>
-              <li>
-              <Link to='/item'>My item</Link>
-              </li>
+              </li>  
             </ul>
           </li>
             <li>
@@ -94,10 +94,7 @@ const Nabver = () => {
               </li>
               <li>
               <Link to='/add'>Add Item</Link>
-              </li>
-              <li>
-              <Link to='/item'>My item</Link>
-              </li>
+              </li> 
             </ul>
           </li>
           <li>{user ? <button onClick={singout}>Logout</button> :
@@ -106,7 +103,16 @@ const Nabver = () => {
           <li>
             {user ? <div class="flex items-center justify-center w-14 rounded-full">
               <Link to="profile">
-                <img src={user.photoURL} /></Link>
+              {user?.photoURL ? (
+                  <img src={user?.photoURL} alt="" />
+                ) : (
+                  <img
+                    src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ3rzr5yCjWIMDSeo2uKEkNUIx3yOSwwBZP8w&usqp=CAU"
+                    alt=""
+                  />
+                )}
+                
+                </Link>
             </div> : <li>
 
             </li>}

@@ -1,8 +1,7 @@
 import React from 'react';
 
 const Laptop = ({service, DeleteBtn}) => {
-    const {name,price,img,Discreption
-    } = service;
+    const {name,price,img,Discreption} = service;
     return (
         <div>
              <div class="card card-compact w-[380px] h-[500px] bg-white shadow-lg">

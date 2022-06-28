@@ -2,7 +2,10 @@ import React from 'react';
 import { useAuthState } from 'react-firebase-hooks/auth';
 import { useForm } from 'react-hook-form';
 import auth from '../../firebase.init';
+import { toast } from 'react-toastify';
+import { useNavigate } from 'react-router-dom';
 const AddItem = () => {
+    const navigate = useNavigate()
     const { register, handleSubmit } = useForm();
     const onSubmit =data=>{
         const url = `http://localhost:5000/product`;
@@ -16,6 +19,8 @@ const AddItem = () => {
         .then(res=>res.json())
         .then(data =>{
          console.log(data);
+       toast("Product added successfully")
+       navigate("/")
          
         })
     }

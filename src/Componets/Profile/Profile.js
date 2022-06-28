@@ -1,6 +1,9 @@
-import React from 'react';
+import axios from 'axios';
+import React, { useEffect } from 'react';
 import { useAuthState} from 'react-firebase-hooks/auth';
 import { useQuery } from "react-query";
+import swal from 'sweetalert';
+import Swal from 'sweetalert2';
 import auth from '../../firebase.init';
 import Loading from '../Shared/Loading';
 const Profile = () => {
@@ -20,11 +23,11 @@ const Profile = () => {
         return <Loading />;
       }
       if (error) {
-        // Swal({
-        //   title: "Fetch Error",
-        //   text: "Faild To Fetch",
-        //   icon: "error",
-        // });
+        swal({
+          title: "Fetch Error",
+          text: "Faild To Fetch",
+          icon: "error",
+        });
       }
         console.log(profile);
       const getData = (e) => {
@@ -47,11 +50,11 @@ const Profile = () => {
           .then((data) => {
             console.log(data);
             if (data) {
-            //     swal({
-            //     title: "Info Updated",
-            //     text: "Data Updated Successfully",
-            //     icon: "success",
-            //   });
+                swal({
+                title: "Info Updated",
+                text: "Data Updated Successfully",
+                icon: "success",
+              });
               refetch();
               e.target.reset();
             }
