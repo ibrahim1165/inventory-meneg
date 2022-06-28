@@ -8,7 +8,7 @@ const Computers = ({ service, DeleteBtn }) => {
             <div class="card card-compact w-[380px] h-[450px] bg-white shadow-lg">
                 <figure><img className="" src={img} alt="Shoes" /></figure>
                 <div class="card-body">
-                    <h2 class="card-title">Service: {name}</h2>
+                    <h2 class="card-title">Name: {name}</h2>
                     <p>Price: ${price}</p>
                     <p>Description: <span className="text-sm text-gray-500">{description}</span></p>
                 </div>

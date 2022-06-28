@@ -13,6 +13,7 @@ import Profile from './Componets/Profile/Profile';
 import Computer from './Componets/Cetagory/Computer';
 import Laptops from './Componets/Cetagory/Laptops';
 
+
 function App() {
   return (
     <div>

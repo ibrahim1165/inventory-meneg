@@ -67,10 +67,7 @@ const Nabver = () => {
       <div className="navbar-end hidden lg:flex">
         <ul className="menu menu-horizontal p-0">
           <li><Link to="/">Home</Link></li>
-          <li><Link to="/item">Add Item</Link></li>
-          <li>{user ? <button onClick={singout}>Logout</button> :
-            <Link to="/login">Login</Link>
-          }</li>
+          <li><Link to="/item">Add Item</Link></li> 
 
           <li class='dropdown dropdown-hover dropdown-end'>
             <label
@@ -91,6 +88,9 @@ const Nabver = () => {
               </li>
             </ul>
           </li>
+          <li>{user ? <button onClick={singout}>Logout</button> :
+            <Link to="/login">Login</Link>
+          }</li>
           <li>
             {user ? <div class="flex items-center justify-center w-14 rounded-full">
               <Link to="profile">
