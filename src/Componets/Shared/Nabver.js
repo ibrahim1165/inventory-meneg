@@ -84,10 +84,10 @@ const Nabver = () => {
               class='dropdown-content menu p-2 shadow bg-black  rounded-box w-52'
             >
               <li>
-                <Link to=''>Laptop</Link>
+                <Link to='/laptop'>Laptop</Link>
               </li>
               <li>
-                <Link to=''>Computer</Link>
+                <Link to='/computer'>Computer</Link>
               </li>
             </ul>
           </li>

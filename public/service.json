@@ -46,5 +46,140 @@
        "price":385,
        "img":"https://i.ibb.co/y068KQK/pic8.jpg",
        "description":"Lenovo's entry-level Legion Tower 5i gaming desktop delivers improved performance and style at a low price."
-    }
+    },
+    {
+      "name": "Asus",
+      "price":750,
+      "quentity":3,
+      "Discreption":"Upgrade and brand warranty all latest model Asus laptop with the best price in Bangladesh. Find your model from i3, i5, i7 cheap price order online or visit",
+      "supplire":"Alexa",
+      "img":"https://cdn.mos.cms.futurecdn.net/6t8Zh249QiFmVnkQdCCtHK.jpg"
+
+  },
+  {
+      "name": "Mackbook Pro",
+      "price":720,
+      "quentity":5,
+      "Discreption":"pple's laptops are now comprised of a 13-inch MacBook Air and three flavors of MacBook Pro: 13 inches, 14 inches and 16 inches. It can be tough deciding which MacBook to buy, ",
+      "supplire":"Alen Max",
+      "img":"https://cdn.mos.cms.futurecdn.net/uWjEogFLUTBc8mSvagdiuP.jpg"
+
+  },
+  {
+      "name": "mackbook air",
+      "price":980,
+      "quentity":7,
+      "Discreption":"The good news is that the latest MacBook Pro 16-inch has now down to its cheapest ever price in the US and UK, so it's a great time to pick up one of the best laptops you can buy",
+      "supplire":"maickel Adam",
+      "img":"https://cdn.mos.cms.futurecdn.net/svT379G8WNZsjn6cFabxsC-1200-80.jpg"
+
+  },
+  {
+      "name": "Apple Notebook",
+      "price":600,
+      "quentity":4,
+      "Discreption":"The Apple MacBook white is currently the only plastic model in Apple's line-up of laptop computers, with the rest of the MacBook Pro line coming in aluminium.",
+      "supplire":"Neymar jr",
+      "img":"https://cdn.pocket-lint.com/r/s/1200x/assets/images/71672-laptops-review-apple-macbook-white-notebook-image1-mqhprFdBfs.JPG"
+
+  },
+  {
+      "name": "New Mackbook air",
+      "price":780,
+      "quentity":4,
+      "Discreption":"The all-new Apple MacBook Air was refreshed late last year with this hugely popular machine getting a stunning new look and much sharper Retina display.",
+      "supplire":"Cristano cr7",
+      "img":"https://cdn.images.express.co.uk/img/dynamic/59/750x445/1152685.jpg"
+
+  },
+  {
+      "name": "Asus",
+      "price":960,
+      "quentity":5,
+      "Discreption":"The best Asus laptops don’t just pack a punch. They’re also just as stylish as HP’s premium laptops and as robust as Apple’s offerings.",
+      "supplire":"Merin Jems",
+      "img":"https://cdn.mos.cms.futurecdn.net/kwP2nL8FAVboognXmW6nvP.jpg"
+
+  },
+  {
+      "name": "Asus VivoBook",
+      "price":540,
+      "quentity":2,
+      "Discreption":"This Asus laptop buyer’s guide excludes the TUF and Republic of Gamers (ROG) sub-brands from Asus.",
+      "supplire":"sigmal malik",
+      "img":"https://www.androidauthority.com/wp-content/uploads/2020/05/Asus-Zenbook-Pro-Duo-lid-profile.jpg"
+
+  },
+  {
+      "name": "Hp Spectre x360",
+      "price":850,
+      "quentity":8,
+      "Discreption":"Few brands in the laptop world are as renowned and popular as HP. From budget-friendly laptops to high-end premium experiences, the company offers ",
+      "supplire":"micel",
+      "img":"https://www.xda-developers.com/files/2021/04/Best-HP-laptops.jpg"
+
+  },
+  {
+      "name": "Asus ROG",
+      "price":1010,
+      "quentity":4,
+      "Discreption":"ASUS ROG Strix G15 (2021) Gaming Laptop, 15.6” 144Hz IPS Type FHD Display, NVIDIA GeForce RTX 3060, AMD Ryzen 9 5900HX, 16GB DDR4, 512GB PCIe NVMe SSD, RGB Keyboard, Windows 10, G513QM-ES94",
+      "supplire":"Alia bird",
+      "img":"https://images.tv9bangla.com/wp-content/uploads/2021/10/asus-gaming-laptop.jpg"
+
+  },
+  {
+      "name": "Asus Rog 2",
+      "price":650,
+      "quentity":10,
+      "Discreption":"We understand your frustration. In fact, it’s a fairly common issue with the ASUS laptop.",
+      "supplire":"Gaill",
+      "img":"https://linuxhint.com/wp-content/uploads/2021/11/How-To-Unlock-Keyboard-On-ASUS-Laptop.jpg"
+
+  },
+  {
+      "name": "Lenovo",
+      "price":350,
+      "quentity":4,
+      "Discreption":"Lenovo continues to keep the Carbon line updated with the newest components, and this latest model is an excellent example of why. It's a powerful 14-inch laptop",
+      "supplire":"Ms Dhone",
+      "img":"https://icdn.digitaltrends.com/image/digitaltrends/lenovo-thinkpad-x1-titanium-yoga-laptop-500x500.jpg"
+
+  },
+  {
+      "name": "Acer",
+      "price":840,
+      "quentity":3,
+      "Discreption":"Even though not all the products to come out of Acer’s presentation are brand new, they certainly provide worthy upgrades over the previous generation.",
+      "supplire":"Risab pant",
+      "img":"https://static.toiimg.com/thumb/msid-68839234,width-1200,height-900,resizemode-4/.jpg"
+
+  },
+  {
+      "name": "Acer 2 ",
+      "price":450,
+      "quentity":6,
+      "Discreption":"Read the in depth Review of Acer Aspire 5755 - Budget champ Laptops. Know detailed info about Acer Aspire 5755 - Budget champ configuration, design .",
+      "supplire":"Mostafiz",
+      "img":"https://static.digit.in/default/artImg198x166_7328.jpg"
+
+  },
+  {
+      "name": "Acer Aspire 5",
+      "price":710,
+      "quentity":8,
+      "Discreption":"Acer tweaked the Aspire 5’s design for 2021, with the biggest change being a new hinge that angles the chassis bottom several degrees to provide for better airflow and prop up the keyboard. ",
+      "supplire":"Den zems",
+      "img":"https://icdn.digitaltrends.com/image/digitaltrends/olympus-digital-camera-1090.jpg"
+
+  },
+  {
+      "name": "Acer aiser 7",
+      "price":520,
+      "quentity":5,
+      "Discreption":"Acer Aspire 7 Gaming Laptops. Know detailed info about Acer Aspire 7 Gaming configuration, design and performance quality",
+      "supplire":"Chawal",
+      "img":"https://static.digit.in/default/a1fdbeb8068295374da12408909e54a77c411cdd.jpeg"
+
+  }
 ]

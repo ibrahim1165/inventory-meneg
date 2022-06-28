@@ -10,6 +10,8 @@ import Footer from './Componets/Shared/Footer';
 import { ToastContainer} from 'react-toastify';
   import 'react-toastify/dist/ReactToastify.css';
 import Profile from './Componets/Profile/Profile';
+import Computer from './Componets/Cetagory/Computer';
+import Laptops from './Componets/Cetagory/Laptops';
 
 function App() {
   return (
@@ -17,6 +19,8 @@ function App() {
       <Nabver />
       <Routes>
         <Route path="/" element={<Home />}  />
+        <Route path="/computer" element={<Computer />}  />
+        <Route path="/laptop" element={<Laptops />}  />
         {/* <Route path="/profile" element={<Profile />}  /> */}
         <Route path="/item" element={<AddItem />}  />
         <Route path="/login" element={<Login />} ></Route>
