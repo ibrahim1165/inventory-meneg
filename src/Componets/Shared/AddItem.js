@@ -8,7 +8,7 @@ const AddItem = () => {
     const navigate = useNavigate()
     const { register, handleSubmit } = useForm();
     const onSubmit =data=>{
-        const url = `http://localhost:5000/product`;
+        const url = `https://ancient-brook-51356.herokuapp.com/product`;
         fetch(url, { 
          method: 'POST',
          headers: {

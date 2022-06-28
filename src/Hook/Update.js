@@ -17,7 +17,7 @@ const Update = () => {
         data: profile,
       } = useQuery(["userData",], () =>
         fetch(
-          `http://localhost:5000/user/${user?.email}`
+          `https://ancient-brook-51356.herokuapp.com/user/${user?.email}`
         ).then((res) => res.json())
       );
 
@@ -27,7 +27,7 @@ const Update = () => {
         const price = e.target.price.value;
         const description = e.target.description.value;
         const updateUser ={name, price, description};
-        const url = `http://localhost:5000/product/${id}`;
+        const url = `https://ancient-brook-51356.herokuapp.com/product/${id}`;
         fetch(url, { 
          method: 'PUT',
          headers: {

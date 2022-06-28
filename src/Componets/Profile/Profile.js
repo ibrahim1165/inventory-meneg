@@ -15,7 +15,7 @@ const Profile = () => {
         data: profile,
       } = useQuery(["userData", user], () =>
         fetch(
-          `http://localhost:5000/user/${user?.email}`
+          `https://ancient-brook-51356.herokuapp.com/user/${user?.email}`
         ).then((res) => res.json())
       );
     
@@ -39,7 +39,7 @@ const Profile = () => {
           address: e.target.address.value,
           phone: parseInt(e.target.phone.value),
         };
-        fetch(`http://localhost:5000/user/${user?.email}`, {
+        fetch(`https://ancient-brook-51356.herokuapp.com/user/${user?.email}`, {
           method: "PUT",
           headers: {
             "content-type": "application/json",

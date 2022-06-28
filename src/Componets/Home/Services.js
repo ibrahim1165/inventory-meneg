@@ -5,7 +5,7 @@ import Service from './Service';
 const Services = () => {
     const [services,setServices]= useState([])
     useEffect(()=>{
-        fetch('http://localhost:5000/product')
+        fetch('https://ancient-brook-51356.herokuapp.com/product')
         .then(res =>res.json())
         .then(data =>{
             setServices(data)})
@@ -13,7 +13,7 @@ const Services = () => {
     const DeleteBtn = (id) => {
         const proceed = window.confirm("Are you sure you want to delete");
         if (proceed) {
-          const url = `http://localhost:5000/computer/${id}`;
+          const url = `https://ancient-brook-51356.herokuapp.com/computer/${id}`;
           fetch(url, {
             method: "DELETE",
           })

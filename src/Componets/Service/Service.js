@@ -12,7 +12,7 @@ const Service = ({ service, DeleteBtn }) => {
                 <p>Price: ${price}</p>
                 <p>Description: <span className="text-sm text-gray-500">{description}</span></p>
             </div>
-            <div>
+            <div className="flex justify-between">
             <div class="card-actions justify-end p-2">
                 <button class="btn btn-sm btn-primary btn-outline  mt-[-30px]">
                     <button onClick={() => DeleteBtn(service._id)}>Delete</button>

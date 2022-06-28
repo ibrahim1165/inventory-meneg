@@ -6,7 +6,7 @@ const ComputerAddProduct = () => {
     const { register, handleSubmit } = useForm();
     const navigate = useNavigate()
     const onSubmit =data=>{
-        const url = `http://localhost:5000/computer`;
+        const url = `https://ancient-brook-51356.herokuapp.com/computer`;
         fetch(url, { 
          method: 'POST',
          headers: {
