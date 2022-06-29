@@ -33,7 +33,7 @@ function App() {
         <Route path="/com" element={<ComputerAddProduct  />}  />
         <Route path="/lap" element={<LapAddProduct />}  />
         <Route path="/signup" element={ <Signup />} ></Route>
-        <Route path="/update/:id" element={ <Update />} ></Route>
+        {/* <Route path="/update/:id" element={ <Update />} ></Route> */}
       </Routes>
       <ToastContainer />
       <Footer />

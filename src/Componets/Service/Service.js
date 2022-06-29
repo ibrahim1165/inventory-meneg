@@ -18,11 +18,11 @@ const Service = ({ service, DeleteBtn }) => {
                     <button onClick={() => DeleteBtn(service._id)}>Delete</button>
                 </button>
             </div>
-            <div class="card-actions justify-end p-2">
+            {/* <div class="card-actions justify-end p-2">
                 <button class="btn btn-sm btn-primary btn-outline  mt-[-30px]">
                 <Link to={`/update/${service._id}`}><button>Update</button></Link>
                 </button>
-            </div>
+            </div> */}
             </div>
             
         </div>
